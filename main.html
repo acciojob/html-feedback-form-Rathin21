@@ -9,18 +9,19 @@
 <body>
 	<!-- the entire body must be written by student -->
 	<h1>Feedback Form</h1>
-	<form>
+	<form method="post">
 		<label for="name">Name</label><br>
 		<input type="text" id="name" name="name" minlength=3 maxlength=50><br>
 		<label for="portfolio">Portfolio</label><br>
 		<input type="url" id="portfolio" name="portfolio"><br>
 		<label for="favColor">Favourite Color</label><br>
-		<select id="favColor" name="favColor">
+<!-- 		<select id="favColor" name="favColor">
 		  <option value="red">red</option>
 		  <option value="green">green</option>
 		  <option value="blue">blue</option>
 		  <option value="yellow">yellow</option>
-		</select><br>
+		</select><br> -->
+		<input type="color" id="favColor" name="favColor"><br>
 		<label for="likeness">Likeness between(1 to 100):</label>
 		<input type="range" id="likeness" name="likeness" min="1" max="100"><br>
 		<input type="submit" value="Submit">
